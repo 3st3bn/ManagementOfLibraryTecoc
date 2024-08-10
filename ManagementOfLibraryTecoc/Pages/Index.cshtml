@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Gestión de Préstamos de Libros";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gestión de Préstamos de Libros</h1>
+    <p class="lead">Bienvenido al sistema de gestión de préstamos de libros de la biblioteca del TECOC.</p>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Gestión de Libros</div>
+                <div class="card-body">
+                    <h5 class="card-title">Administrar Colección</h5>
+                    <p class="card-text">Agregar, eliminar y actualizar información de libros en la biblioteca.</p>
+                    <a href="/Books" class="btn btn-light">Gestionar Libros</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Gestión de Préstamos</div>
+                <div class="card-body">
+                    <h5 class="card-title">Registrar Préstamos</h5>
+                    <p class="card-text">Registrar y gestionar préstamos de libros, devoluciones y fechas de vencimiento.</p>
+                    <a href="/Loans" class="btn btn-light">Gestionar Préstamos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Gestión de Usuarios</div>
+                <div class="card-body">
+                    <h5 class="card-title">Administrar Usuarios</h5>
+                    <p class="card-text">Registrar y actualizar información de los usuarios de la biblioteca.</p>
+                    <a href="/Users" class="btn btn-light">Gestionar Usuarios</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a href="/Reports" class="btn btn-secondary btn-lg">Generar Reportes</a>
+    </div>
+</div>
